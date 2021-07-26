@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="covidreg.css" rel="stylesheet"/>
+<script language="javascript" type="text/javascript">
+function testJS()
+{
+
+	var b = document.getElementById('fname').value
+	console.log(b);
+
+	document.getElementById('here').innerHTML = b.value;
+
+}
+</script>
+</head>
+
+<body>
+<form action="registration.html" method="get">
+<div class="container">
+    <h1>Register here</h1>
+   
+  
+    <hr>
+	 <label for="fname"><b>Full Name:   </b></label>
+    <input type="text"style="padding:10px; margin:10px 50px 10px" placeholder="Enter full name" name="fname" id="fname" required><br>
+    <label for="email"><b>Email   </b></label>
+    <input type="text"style="padding:10px; margin:10px 70px 10px 65px" placeholder="Enter Email" name="email" id="email" required><br>
+	<label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" style="padding:10px; margin:10px 10px 10px" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    
+    <hr>
+   
+
+    <button type="submit" class="submitbtn" style="width: 192px; " onClick="testJS()">Submit</button>
+  </div>
+  
+   <div class="container signin">
+    <p>Already have an account? <a href="signin.html">Sign in</a>.</p>
+  </div>
+</form>
+</body>
+</html>

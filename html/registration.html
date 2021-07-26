@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration link</title>
+<script language="javascript" type="text/javascript">
+function testJS()
+{
+
+	var b = document.getElementById('fname').value
+
+	document.getElementById('here').innerHTML = b;
+
+}
+</script>
+<style>
+input[type=text] {
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  width: 50%
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+}
+.submitbtn {
+  background-color: powderblue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  width: 10%;
+  opacity: 0.9;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+ 
+}
+</style>
+</head>
+<body>
+<form action="thankyou.html" method="get">
+<div class="container">
+    <h3>Please fill your Personal Details here....</h3>
+   
+    <hr>
+	 <label for="fname">Full Name:</label>
+    <input type="text" placeholder="Enter full name here" name="fname" id="here" required>
+    <br>
+    
+     <label for="address">Current Address:</label>
+    <textarea rows="4" cols="" style="width:50%"></textarea>
+    <br><br>
+    
+    <label for="dob">Date of Birth:</label>
+  	<input type="date" id="start" name="dop-start"
+       value="2021-07-13"
+       min="2018-01-01" max="2018-12-31">
+  	<br><br>
+  	
+    <label for="travel">Have you travelled outside of the state?</label>
+    <label class="container">Yes
+  	<input type="radio" checked="checked" name="radio">
+	</label>
+	<label class="container">No
+  	<input type="radio" name="radio">
+	</label>
+	
+	<label for="travel">Have you contacted with any covid19 patients?</label>
+    <label class="container">Yes
+  	<input type="checkbox" checked="checked">
+  	<span class="checkmark"></span>
+	</label>
+	<label class="container">No
+  	<input type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+	
+	<label for="symptoms">Do you have such Symptoms?</label>
+  	<select name="symptoms" id="symptoms">
+  	<option value="select">Select</option>
+    <option value="cough">Cough</option>
+    <option value="fever">Fever</option>
+    <option value="tiredness">Tiredness</option>
+    <option value="pain">Body pain</option>
+ 	</select>
+
+    
+    <hr>
+   
+
+    <button type="submit" class="submitbtn">Submit</button>
+  </form>  
+  </div>
+</body>
+</html>
