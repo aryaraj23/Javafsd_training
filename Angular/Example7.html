@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>AngularJS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    </head>
+    <body>
+       <div ng-app="" ng-init="student={firstname:'Arya', lastname:'Raj',rollno:1001}; marks=[50,60,75,65]">
+            <p>Hello {{student.firstname+" "+student.lastname}}</p>
+            <p>Name in Uppercase: {{student.firstname+" "+student.lastname | uppercase}}</p>
+            <p>Roll No: {{student.rollno}}</p>
+            <p>Marks(Physics): {{marks[2]}}</p>
+       </div>
+    </body>
+</html>

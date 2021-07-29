@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF 8">
+        <title>Event Registration</title>
+    </head>
+    <body>
+        <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <div ng-app="demoApp" ng-controller="DemoController">
+            This tutorialID is {{tutorialID | number:3}}
+        </div>
+        <script type="text/javascript">
+            var demoApp = angular.module('demoApp',[]);
+            demoApp.controller('DemoController',function($scope){
+                $scope.tutorialID = 3.254652;
+            });
+        </script>
+    </body>
+</html>

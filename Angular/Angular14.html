@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF 8">
+        <title>Event Registration</title>
+    </head>
+    <body ng-app="DemoApp" >
+        <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/lib/bootstrap.js"></script>
+        <script src="/lib/bootstrap.css"></script>
+        <h1>Angular Example</h1>
+        <div ng-controller="DemoController">
+            <form ng-submit="Display()">
+                &nbsp;&nbsp;&nbsp;
+                Enter which topic you would like to learn
+                <input type="text" ng-app="DemoApp" ng-model="Topic"><br>
+
+                <input type="submit" value="Submit">
+
+                <ul ng-repeat="topicname in AllTopic"> 
+                    <li>{{topicname}}</li>
+                </ul>
+            </form>
+        </div>
+        
+        <script>
+            var DemoApp =angular.module('DemoApp', []);
+
+            DemoApp.controller('DemoController',function($scope){
+                $scope.AllTopic = [];
+                $scope.Display = function() {
+                    $scope.AllTopic.push($scope.Topic);
+                }
+            });
+        </script>
+    </body>
+</html>

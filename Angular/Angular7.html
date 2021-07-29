@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF 8">
+        <title>Event Registration</title>
+    </head>
+    <body>
+        <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <div ng-app="DemoApp" ng-controller="DemoController">
+            This tutorial price is {{tutorialprice | currency}}
+        </div>
+        <script type="text/javascript">
+            var DemoApp = angular.module('DemoApp',[]);
+            DemoApp.controller('DemoController',function($scope){
+                $scope.tutorialprice = 20.65;
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF 8">
+        <title>Event Registration</title>
+        <style>
+            table,th,td{
+                border: 5px solid green;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+        <script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="/lib/bootstrap.js"></script>
+        <script src="/lib/bootstrap.css"></script>
+        <div ng-app="DemoApp" ng-controller="DemoController">
+            <table>
+                <tr ng-repeat="ptutor in tutorial">
+                    <td>{{ptutor.Name}}</td>
+                    <td>{{ptutor.Description}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <script type="text/javascript">
+            var app = angular.module('DemoApp',[]);
+
+            app.controller('DemoController',function($scope){
+
+                $scope.tutorial = [
+                    {Name:"Controllers",Description:"Controllers in action"},
+                    {Name:"Models",Description:"Models and binding data"},
+                    {Name:"Directives",Description :"Flexibility of Directives"},
+                ]});
+        </script>
+    </body>
+</html>
