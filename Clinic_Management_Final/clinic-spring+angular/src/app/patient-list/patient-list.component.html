@@ -1,0 +1,40 @@
+<h2 style="text-align: center;">{{title}}</h2>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Patient List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let patient of patients | async">
+            <td>{{patient.pfname}}</td>
+            <td>{{patient.plname}}</td>
+            <td>{{patient.age}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.address}}</td>
+            <td>{{patient.phoneno}}</td>
+            <td><button (click)="deletePatient(patient.pid)" class="btn btn-danger">Delete</button>
+                <button (click)="updatePatient(patient.pid)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                <button (click)="patientDetails(patient.pid)" class="btn btn-info" style="margin-left: 10px">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div routerLink="/admin" class="btn" routerLinkActive="active">
+        <button class="btn btn-dark"><i class="fas fa-backward 2x d-flex justify-content-center">&nbsp;Back to Admin</i></button>
+      </div>
+    </div>
+  </div>
+  
+  
