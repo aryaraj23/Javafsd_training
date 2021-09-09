@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-primary">
+  <div class="container-fluid">
+    <a routerLink="/login" class="navbar-brand" >Clinic Management </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="login" class="nav-link" routerLinkActive="active">Admin Login&nbsp;<i class="fas fa-user-cog"></i></a>
+    </li>
+    </ul>
+    <ul class="navbar-nav" style="margin-left: auto;">
+      <li class="nav-item">
+        <a routerLink="login" class="nav-link" routerLinkActive="active">Logout<i class="fas fa-user-lock"></i></a>
+    </li>
+    </ul>
+    </div>  
+ </div> 
+</nav>
+
+
+<div class="container">
+ <br> 
+  
+  <router-outlet></router-outlet>
+   
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>All Rights Reserved 2019 @jfdtraining</span>
+  </div>
+</footer>

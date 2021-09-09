@@ -1,0 +1,20 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+body{
+    padding-left: 200px;
+    background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/110433-black-and-blue-blurred-background-vector.jpg?w=800&q=95");
+    background-repeat: no-repeat;
+	background-size: 100%;
+}
+.card {
+    left: 80px;
+    width: 780px;
+    height: 480px;
+    background-color: transparent;
+    border: transparent;
+}
+.btn {
+    height: 200px;
+    width: 350px;
+    border-radius: 8px;
+}
