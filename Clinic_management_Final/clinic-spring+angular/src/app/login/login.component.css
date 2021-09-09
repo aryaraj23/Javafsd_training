@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.card-body {
+    padding-left: 400px;
+}
+
+.login {
+    width: 500px;
+}

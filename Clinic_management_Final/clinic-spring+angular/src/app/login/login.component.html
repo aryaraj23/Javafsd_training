@@ -1,0 +1,29 @@
+<router-outlet></router-outlet>
+<h2 style="text-align: center;">{{title}}</h2>
+
+<div clas="card " style=" width: 500px;">
+    <div class="card-body">
+    <form class="login">
+        <div class="form-group">
+        <label for="username"><b>UserName</b></label>
+        <input type="text" class="form-control" id="username" placeholder="username">
+        </div>
+        <div class="form-group">
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdown">
+        <label class="form-check-label" for="dropdown">
+            <b>Remember me</b>
+        </label>
+        </div>
+        <div routerLink="/admin" class="nav-link" routerLinkActive="active">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> &nbsp;Sign in</button>
+        </div>
+    </form>
+</div>
+</div>
+
+
+   

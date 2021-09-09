@@ -1,0 +1,22 @@
+<h2 style="text-align: center;">{{title}}</h2>
+
+<hr/>
+<div class="container"style="width: 400px;">
+  <div class="card">
+    <div *ngIf="medicine">
+      <div>
+        <label><b>Medicine Name: </b></label> {{medicine.mname}}
+      </div>
+      <div>
+        <label><b>Price: </b></label> {{medicine.price}}
+      </div>
+      <div>
+        <label><b>Quantity: </b></label> {{medicine.qty}}
+      </div> 
+  </div>
+</div>
+<br>
+<br>
+<button (click)="list()" class="btn btn-dark"><i class="fas fa-backward 2x d-flex justify-content-center">&nbsp;Back to Medicine List</i></button><br>
+
+
